@@ -31,8 +31,6 @@
     "cordova-plugin-test-framework": "^2.1.0"
   },
   "dependencies": {
-    "cordova-android": "^9.0.0",
-    "cordova-ios": "^6.2.0"
-  }
+    "cordova-android": "^9.0.0"
 }
 
