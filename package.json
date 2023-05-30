@@ -1,0 +1,38 @@
+{
+  "name": "cordova-plugin-has-orientation-devices",
+  "version": "1.0.0",
+  "description": "Plugin para detectar dispositivos de orientacion",
+  "keywords": [
+    "cordova",
+    "plugin",
+    "myplugin"
+  ],
+  "cordova": {
+    "id": "cordova-plugin-has-orientation-devices",
+    "platforms": [
+      "android",
+      "browser"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psiciliano/cordova-plugin-has-orientation-devices.git"
+  },
+  "author": "Pablo Siciliano",
+  "license": "MIT",
+  "engines": {
+    "cordova": ">=9.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "cordova-plugin-test-framework": "^2.1.0"
+  },
+  "dependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-ios": "^6.2.0"
+  }
+}
+
