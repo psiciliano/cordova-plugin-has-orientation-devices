@@ -1,6 +1,6 @@
 var HasOrientationDevicesPlugin = function() {};
 
-hasOrientationDevicesPlugin.prototype.hasCompass = function(successCallback, errorCallback) {
+HasOrientationDevicesPlugin.prototype.hasCompass = function(successCallback, errorCallback) {
     if (cordova.platformId === 'browser') {
     	successCallback(0);
     } else {
@@ -8,7 +8,7 @@ hasOrientationDevicesPlugin.prototype.hasCompass = function(successCallback, err
    }
 };
 
-hasOrientationDevicesPlugin.prototype.hasAccelerometer = function(successCallback, errorCallback) {
+HasOrientationDevicesPlugin.prototype.hasAccelerometer = function(successCallback, errorCallback) {
   if (cordova.platformId === 'browser') {
         successCallback(0);
     } else {
@@ -17,7 +17,7 @@ hasOrientationDevicesPlugin.prototype.hasAccelerometer = function(successCallbac
 };
 
 
-hasOrientationDevicesPlugin.prototype.checkCompass = function(successCallback, errorCallback) {
+HasOrientationDevicesPlugin.prototype.checkCompass = function(successCallback, errorCallback) {
     if (cordova.platformId === 'browser') {
         successCallback(0);
     } else {
@@ -25,7 +25,7 @@ hasOrientationDevicesPlugin.prototype.checkCompass = function(successCallback, e
    }    
 };
 
-hasOrientationDevicesPlugin.prototype.checkAccelerometer = function(successCallback, errorCallback) { 
+HasOrientationDevicesPlugin.prototype.checkAccelerometer = function(successCallback, errorCallback) { 
   if (cordova.platformId === 'browser') {
         successCallback(0);
     } else {
