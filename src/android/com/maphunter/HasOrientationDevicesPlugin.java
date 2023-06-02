@@ -66,7 +66,7 @@ public class HasOrientationDevicesPlugin extends CordovaPlugin {
             boolean hasPermission = cordova.getActivity().checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION, android.os.Process.myPid(), android.os.Process.myUid()) == PackageManager.PERMISSION_GRANTED;
     
             if (!hasPermission) {
-                cordova.requestPermission(this, REQUEST_LOCATION_PERMISSION, android.Manifest.permission.ACCESS_FINE_LOCATION);
+                cordova.requestPermission(this, 0, android.Manifest.permission.ACCESS_FINE_LOCATION);
                 return false;
             }
     
@@ -88,7 +88,7 @@ public class HasOrientationDevicesPlugin extends CordovaPlugin {
             boolean hasPermission = cordova.getActivity().checkPermission(android.Manifest.permission.ACCESS_FINE_LOCATION, android.os.Process.myPid(), android.os.Process.myUid()) == PackageManager.PERMISSION_GRANTED;
     
             if (!hasPermission) {
-                cordova.requestPermission(this, REQUEST_ACCELEROMETER_PERMISSION, android.Manifest.permission.ACCESS_FINE_LOCATION);
+                cordova.requestPermission(this, 0, android.Manifest.permission.ACCESS_FINE_LOCATION);
                 return false;
             }
     
