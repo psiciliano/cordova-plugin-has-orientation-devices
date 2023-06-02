@@ -17,7 +17,7 @@
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/maphunter/HasOrientationDevicesPlugin.kt" target-dir="src/com/maphunter" />
+        <source-file src="src/android/com/maphunter/HasOrientationDevicesPlugin.java" target-dir="src/com/maphunter/cordova-plugin-has-orientation-devices" />
     </platform>
 </plugin>
 

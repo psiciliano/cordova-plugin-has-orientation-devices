@@ -30,6 +30,16 @@ class HasOrientationDevicesPlugin : CordovaPlugin() {
                 callbackContext.success(if (hasAccelerometer) 1 else 0)
                 return true
             }
+            "checkCompass" -> {
+                val hasCompass = checkCompass()
+                callbackContext.success(if (hasCompass) 1 else 0)
+                return true
+            }
+            "checkAccelerometer" -> {
+                val hasAccelerometer = checkAccelerometer()
+                callbackContext.success(if (hasAccelerometer) 1 else 0)
+                return true
+            }
         }
         return false
     }
@@ -60,6 +70,8 @@ class HasOrientationDevicesPlugin : CordovaPlugin() {
 
     return false
     }
+
+    
 
 
     private fun hasCompass(): Boolean {
